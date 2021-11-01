@@ -13,6 +13,17 @@ import lombok.AllArgsConstructor;
 import spring.emailverification.registration.token.ConfirmationToken;
 import spring.emailverification.registration.token.ConfirmationTokenService;
 
+/**
+ * 
+ * @Service: Spring @Service annotation is used with classes that provide some
+ *           business functionalities. Spring context will autodetect these
+ *           classes when annotation-based configuration and classpath scanning
+ *           is used.
+ * 
+ * 
+ * 
+ */
+
 @Service
 @AllArgsConstructor
 public class AppUserService implements UserDetailsService {

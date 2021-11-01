@@ -21,6 +21,58 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * 
+ * AppUser class contains the details of the user.
+ * 
+ * @EqualsAndHashCode: When we declare a class with @EqualsAndHashCode, Lombok
+ *                     generates implementations for the equals and hashCode
+ *                     methods.
+ * 
+ * @Id: Every JPA entity is required to have a field which maps to primary key
+ *      of the database table. Such field must be annotated with @Id.
+ * 
+ * 
+ * @SequenceGenerator: The @SequenceGenerator annotation defines a primary key
+ *                     generator that may be referenced by name when a generator
+ *                     element is specified for the GeneratedValue annotation.A
+ *                     sequence generator may be specified on the entity class
+ *                     or on the primary key field or property.
+ * 
+ *                     Argument:
+ * 
+ *                     1. name (Required): A unique generator name that can be
+ *                     referenced by one or more classes to be the generator for
+ *                     primary key values.
+ * 
+ *                     2. sequenceName (Optional): The name of the database
+ *                     sequence object from which to obtain primary key values.
+ * 
+ *                     3. initialValue (Optional): The value from which the
+ *                     sequence object is to start generating.
+ * 
+ *                     4. allocationSize (Optional): The amount to increment by
+ *                     when allocating sequence numbers from the sequence.
+ * 
+ * 
+ * @GeneratedValue: It provides the specification of generation strategies for
+ *                  the values of primary keys. The GeneratedValue annotation
+ *                  may be applied to a primary key property of field of an
+ *                  entity or mapped superclass in a conjunction with the Id
+ *                  annotation. The values that can be used with
+ *                  the @GeneratedValue are those values defined inside the enum
+ *                  GenerationType. GenerationType.java
+ * 
+ * @Enumerated: The most common option to map an enum value to and from its
+ *              database representation in JPA before 2.1. is to use
+ *              the @Enumerated annotation. This way, we can instruct a JPA
+ *              provider to convert an enum to its ordinal or String value.
+ * 
+ * 
+ * 
+ * 
+ */
+
 @Getter
 @Setter
 @EqualsAndHashCode

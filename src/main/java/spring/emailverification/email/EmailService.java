@@ -20,6 +20,17 @@ public class EmailService implements EmailSender {
 
    private final JavaMailSender mailSender;
 
+   /**
+    * 
+    * 
+    * @Async: Spring @Async annotation allows us to create asynchronous methods in
+    *         spring. For a brief, when we annotate a method of a bean @Async
+    *         annotation, Spring will execute it in a separate thread and the
+    *         caller of the method will not wait till the method is completed
+    *         execution.
+    *
+    *
+    */
    @Override
    @Async
    public void send(String to, String email) {

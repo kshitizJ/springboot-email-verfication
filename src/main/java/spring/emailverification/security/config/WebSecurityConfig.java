@@ -12,6 +12,21 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import lombok.AllArgsConstructor;
 import spring.emailverification.appuser.AppUserService;
 
+/**
+ * 
+ * @Configuration: Spring Configuration annotation indicates that the class
+ *                 has @Bean definition methods. So Spring container can process
+ *                 the class and generate Spring Beans to be used in the
+ *                 application. Spring @Configuration annotation allows us to
+ *                 use annotations for dependency injection.
+ * 
+ * @bean: Spring @Bean annotation tells that a method produces a bean to be
+ *        managed by the Spring container. It is a method-level annotation.
+ *        During Java configuration ( @Configuration ), the method is executed
+ *        and its return value is registered as a bean within a BeanFactory.
+ * 
+ */
+
 @Configuration
 @AllArgsConstructor
 @EnableWebSecurity
